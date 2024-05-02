@@ -2,7 +2,17 @@ import pandas as pd
 
 
 if __name__ == '__main__':
-    df = pd.read_csv("negative.csv")
-    df2 = pd.read_csv("positive.csv")
-    print(df.iloc[:, 3])
-    print(df2.iloc[:, 3])
+    headers = ["text", "label"]
+
+    df_positive = pd.read_csv("positive.csv", usecols=[3], header=None)
+    df_positive["label"] = 1
+
+    df_negative = pd.read_csv("negative.csv", usecols=[3], header=None)
+    df_negative["label"] = 0
+
+    df_concat = pd.concat([df_positive, df_negative], ignore_index=True)
+    df_concat.columns = headers
+
+    print(df_concat)
+
+    df_concat.to_csv("data.csv", index=False)
