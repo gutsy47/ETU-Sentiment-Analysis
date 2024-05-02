@@ -1,1 +1,5 @@
 pandas==2.2.2
+scikit-learn==1.4.2
+numpy==1.26.4
+nltk==3.8.1
+pymystem3
