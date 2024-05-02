@@ -1,0 +1,4 @@
+/unversioned/
+/.idea/
+/venv/
+*.pyc
