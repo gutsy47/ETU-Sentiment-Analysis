@@ -1,3 +1,11 @@
-# Initial commit
-Neural Network version:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1DbqJF6_vmvqAO7ZNvNg2fy3TQVmKtknF#scrollTo=W4KElSPKYcIi)
+# Tweets Classification Notebook
+
+These Jupyter notebooks are used for classification
+the sentiment of tweets into positive and negative
+
+## Contents
+- `/raw_data/` - folder with original dataset
+- `data.csv` - prepared for preprocessing dataset
+- `transformers.ipynb` - best result with model rubert-tiny2
+- `tweets_classification.ipynb` - research with BoW, N-Grams & TF-IDF
+- `report.docx` - report on educational practice with explanations
